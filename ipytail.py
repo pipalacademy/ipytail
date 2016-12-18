@@ -96,7 +96,8 @@ def parse_arguments():
 
 	p.add_argument("-l", 
 				   dest="max_lines",
-				   type=int, 
+				   type=int,
+				   default=25,
 				   help="Maximum number of lines allowed in the cell output")
 	p.add_argument("filenames", nargs="+")
 	return p.parse_args()
